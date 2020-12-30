@@ -16,7 +16,7 @@ describe('Router class', ()=>{
         m = new PagesHub();
         _ = new Router(d, m);
         PagesHub.mockClear();
-        console.error = jest.fn()
+        console.error = jest.fn();
     });
     describe('Router: loadHome', ()=>{
         it('should load home page', ()=>{
