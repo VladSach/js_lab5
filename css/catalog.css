@@ -1,0 +1,237 @@
+.container {
+    max-width: 1390px;
+    margin-top: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.products-list {
+    display: flex;
+    width: 100%;
+}
+
+/* SIDEBAR */
+.products-list-sidebar {
+    width: 305px;
+    margin-right: 40px;
+    background: #131730;
+}
+
+.filter-block {
+    position: relative;
+    height: 100%;
+}
+
+#fixed-filter {
+    will-change: min-height;
+}
+
+.toggle-row {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.toggle-title {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.price-ranges {
+    display: flex;
+    margin-top: 15px;
+}
+
+.price-ranges::after, .checkbox-wrap::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    background: #323963;
+    box-shadow: 0 0 2px rgba(0,0,0,.6);
+}
+
+.price-input {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-group-price {
+    width: 105px;
+    position: relative;
+    margin-right: 10px;
+    margin-bottom: 0;
+    max-width: 100%;
+}
+
+#price-from, #price-to {
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    line-height: 17px;
+    border: 2px solid #3c4b72;
+    box-sizing: border-box;
+    box-shadow: 0 3px 5px rgba(0,0,0,.4);
+    border-radius: 4px;
+    width: 100%;
+    background: 0 0;
+    font-weight: 500;
+    font-size: 16px;
+    outline: 0;
+    color: #fff;
+    font-family: Montserrat;
+}
+
+#price-btn {
+    min-width: 35px;
+    background: #49b749;
+    box-shadow: 0 2px 3px rgba(0,0,0,.4);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    transition: .2s ease;
+}
+
+#price-btn:hover {
+    opacity: 0.7;
+}
+
+.checkbox-row {
+    display: block;
+    margin-top: 15px;
+}
+
+.check-group {
+    padding: 10px 0;
+    position: relative;
+    text-decoration: none;
+}
+
+.check-group input {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    outline: 0;
+    border: none;
+    font-family: Montserrat;
+}
+
+.check-group input:checked + label::before{
+    content: url('../images/svg/check-solid.svg');
+}
+
+.check-group label {
+    padding-bottom: 15px;
+    font-size: 16px;
+    line-height: 20px;
+    transition: color .2s ease;
+    font-weight: 500;
+    color: #fff;
+    padding-left: 30px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.check-group label::before {
+    top: -1px;
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #3c4b72;
+    box-sizing: border-box;
+    box-shadow: 0 3px 5px rgba(0,0,0,.4);
+    border-radius: 4px;
+}
+
+
+.check-group label::after {
+    opacity: 1;
+    top: 4px;
+    content: '';
+    position: absolute;
+    left: 5px;
+    transform: rotate(-45deg);
+    width: 10px;
+    height: 6px;
+    opacity: 0;
+    border-bottom: 2px solid #49b749;
+    border-left: 2px solid #49b749;
+    transition: .2s ease;
+}
+
+.check-group label:hover {
+    color: #49b749;
+}
+
+/* CATALOG */
+.products-list-catalog {
+    width: 100%;
+    min-width: 50%;
+}
+
+.top-section {
+    padding: 13px 15px;
+    background: #212648;
+    box-shadow: 0 5px 10px rgba(79,87,108,.15);
+    border-radius: 8px;
+}
+
+.catalog-control {
+    display: flex;
+    align-items: center;
+}
+
+.catalog-sort {
+    
+    margin-right: 20px;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px dashed #5be45b;
+    color: #5be45b;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    cursor: pointer;
+}
+
+.catalog-sort:hover {
+    
+    border-bottom: none;
+}
+
+.active {
+    border-bottom: none;
+    padding-bottom: 2px;
+    color: #fff;
+}
+
+.catalog-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between ;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    
+}

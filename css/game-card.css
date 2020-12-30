@@ -1,0 +1,88 @@
+
+.game-card {
+    padding: 14px;
+    width: 300px;
+    background: #212648;
+    box-shadow: 0 3px 5px rgba(0,0,0,.4);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+
+}
+
+.game-card-image {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 4px;
+    transition: .2s ease;
+    margin-bottom: 15px;
+    display: flex;
+    position: relative;
+    text-decoration: none;
+}
+
+.game-card-image img {
+    display: block;
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.game-card-image:hover {
+    opacity: 0.6;
+}
+
+.game-card-title {
+    overflow-wrap: break-word;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    font-weight: 400;
+    transition: .2s ease;
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    margin-bottom: 30px;
+    max-height: 20px;
+}
+
+.game-card-title:hover {
+    opacity: 0.7;
+}
+
+.game-card-price {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.game-card-price p {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.game-card-platform {
+    margin-top: 15px;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.platform-item {
+    display: none;
+}
+
+.Playstation, .Xbox, .Nintendo{
+    display: block;
+}
+
+.game-card-platform img {
+    width: 100%;
+    margin-right: 10px;
+    max-width: 50px;
+}
