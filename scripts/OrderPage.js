@@ -1,4 +1,4 @@
-import {sendRequest} from './script.js';
+import {sendRequest} from './fakeDB.js';
 
 export default class OrderPage {
     constructor(){

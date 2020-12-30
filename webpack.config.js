@@ -3,7 +3,7 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-    entry: './scripts/script.js',
+    entry: ['babel-polyfill', './scripts/script.js'],
     devtool: 'inline-source-map',
     devServer: {
         liveReload: true,

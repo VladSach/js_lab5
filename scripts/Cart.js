@@ -1,4 +1,4 @@
-import {getData} from './script.js';
+import {getData} from './fakeDB.js';
 
 export default class CartManager {
     constructor(){

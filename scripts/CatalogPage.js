@@ -1,5 +1,4 @@
-import {getData} from './script.js';
-import {showPacMan} from './script.js';
+import {getData} from './fakeDB.js';
 
 export default class CatalogPage {
     constructor(){

@@ -1,5 +1,4 @@
-import {getData} from './script.js';
-import {showPacMan} from './script.js';
+import {getData} from './fakeDB.js';
 
 export default class ProductPage {
     constructor(){
@@ -20,7 +19,6 @@ export default class ProductPage {
 
     async loadProductPage(hash){
 
-        this.content.innerHTML = showPacMan();
 
         let data = await getData();
         let game = data.products.filter(product => {

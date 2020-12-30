@@ -1,5 +1,5 @@
-import {getData} from './script.js';
-import {showPacMan} from './script.js';
+import {getData} from './fakeDB.js';
+
 
 export default class HomePage {
     constructor (){
@@ -14,7 +14,7 @@ export default class HomePage {
 
     async loadHomePage(){
 
-        this.content.innerHTML = showPacMan();
+        
 
         let data = await getData();
         let best_sellers = data.products;

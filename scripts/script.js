@@ -6,6 +6,7 @@ import OrderPage from './OrderPage.js';
 import ActionPage from './ActionPage.js';
 import ProductPage from './ProductPage.js';
 import CatalogPage from './CatalogPage.js';
+import {getData} from './fakeDB.js';
 
 import '../css/style.css';
 import '../css/action.css';
@@ -15,31 +16,6 @@ import '../css/checkout.css';
 import '../css/game-card.css';
 import '../css/product.css';
 
-const requestURL = 'https://my-json-server.typicode.com/VladSach/GameRshop/db';
-
-export async function getData(){
-
-    let response = await fetch(requestURL);
-
-    if (response.ok) {
-        let json = await response.json();
-        return json;
-    }
-
-    throw new Error(response.status);
-}
-
-export function sendRequest(method, url, body=null) {
-    return fetch(url, {method: method, body: body}).then(response => {
-        if (!response.ok) {
-            throw Error(response.statusText);
-        }
-        return response.json();
-    })
-        .catch(error => {
-            console.log(error);
-        });
-}
 
 export function showPacMan(){
     return `
