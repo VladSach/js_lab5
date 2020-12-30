@@ -1,5 +1,5 @@
 /* eslint-env jest */
-jest.mock('../fakeDB.js');
+jest.mock('../fakeDB');
 
 
 import Router from '../Router.js';
@@ -9,7 +9,7 @@ import OrderPage from '../OrderPage.js';
 import ActionPage from '../ActionPage.js';
 import ProductPage from '../ProductPage.js';
 import CatalogPage from '../CatalogPage.js';
-import {getData} from '../fakeDB'
+import {getData} from '../fakeDB';
 
 describe('should define end points', ()=>{
     let end_points;

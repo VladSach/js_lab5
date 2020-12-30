@@ -20,8 +20,6 @@ export default class CatalogPage {
 
     async loadCatalogPage(hash = null) {
 
-        this.content.innerHTML = showPacMan();
-
         let data = await getData();
         let allProducts = data.products;
 
